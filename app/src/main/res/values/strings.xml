@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BPR Player</string>
+    <string name="tracks">Tracks</string>
+    <string name="artists">Artists</string>
+    <string name="playlist_menu">Playlist</string>
+    <string name="tracks_menu">Tracks</string>
+    <string name="artists_menu">Artists</string>
+    <string name="nowPlaying_menu">Now Playing</string>
+    <string name="info_playlist">HorizontalScrollView, it is a fixed view, in which the user can see and start new activities from any activity, but only playlist screen and a second activity will run simultaneously, for example if the user is on the Tracks Screen and goes to Artists, the Tracks will be finished, but the playlist will remain running. It uses an explicit intent to open other screens and the currently category is high-lighted.</string>
+    <string name="most_played">Most Played</string>
+    <string name="favourites">Favourites</string>
+    <string name="recently_played">Recently Played</string>
+    <string name="recently_added">Recently Added</string>
+    <string name="new_playlist">New Playlist</string>
+    <string name="second_info_playlist">Playlist Activity, this screen shows four automatically created playlist, but the user has the option to create new ones. Clicking on any playlist open up the Now Playing activity and a random song from this playlist will be played using the java.util.Random class. A new TextView and ImageView will be created if the user creates a new playlist, but in the future I will add ArrayList methods to do this job.</string>
+    <string name="music_playing">Chicago</string>
+    <string name="band_playing">Michael Jackson</string>
+    <string name="info_tracks">Tracks, this activity will access the music files from the device using MediaStore.Audio. Once a music is selected, it opens the Now Playing activity with the music selected, each LinearLayout (album/title/band) will use explicit content to start the music. This will be the layout, but I will use ListView instead of lots of TextViews.</string>
+    <string name="music_1">Smells Like Teen Spirit</string>
+    <string name="band_1">Nirvana</string>
+    <string name="music_2">Chicago</string>
+    <string name="band_2">Michael Jackson</string>
+    <string name="music_3">Toxic</string>
+    <string name="band_3">Britney Spears</string>
+    <string name="music_4">High Way to Hell</string>
+    <string name="band_4">AC/DC</string>
+    <string name="artists_info">Artists, this activity will show all artists from the device library, all musics on the library will be added to the playlist according to its artists. In order to make it, the MediaStore.Audio.ArtistColumns class will be used.</string>
+</resources>

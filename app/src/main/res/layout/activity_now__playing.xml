@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_now__playing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
+    tools:context="app.getitright.com.example.android.bprplayer.Now_Playing">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/playlist_button"
+                style="@style/topMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/playlist_menu" />
+
+            <TextView
+                android:id="@+id/tracks_button"
+                style="@style/topMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tracks_menu" />
+
+            <TextView
+                android:id="@+id/artists_button"
+                style="@style/topMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/artists_menu" />
+
+            <TextView
+                android:id="@+id/now_playing_button"
+                style="@style/topMenu_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/nowPlaying_menu" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        style="@style/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/michael_jackson" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/button_shuffle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/music_playing"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/band_playing"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/favorite_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/button_previous" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/button_play" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/button_next" />
+    </LinearLayout>
+</LinearLayout>
